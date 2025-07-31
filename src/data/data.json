@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "items": ["Home", "About", "Projects", "Contact"]
+  },
+  "hero": {
+    "welcome":"Welcome",
+    "firstName": "Braian",
+    "lastName":"Silva",
+    "image":"/hero_image.svg"
+  },
+  "about": {
+    "location": "Sorocaba, SP",
+    "birthDate": "1997-03-14",
+    "title": "About Me",
+    "description": "I'm a frontend developer with experience in Angular, React, and JavaScript. I thrive on collaboration, continuous learning, and delivering quality work. I love contributing to the tech community through GitHub and exploring innovative solutions with teams."
+  },
+  "skills": {
+    "frontend": ["AngularJS", "ReactJS", "JavaScript", "HTML", "CSS"],
+    "backend": ["Node.js", "Sequelize"],
+    "tools": ["Git", "GitHub", "Visual Studio Code", "Figma"],
+    "other": ["Responsive Design", "API Integration", "Cross-browser Compatibility"]
+  },
+  "projects": [
+    {
+      "name": "Angular Portfolio",
+      "description": "A dynamic portfolio built using Angular and GitHub API to showcase repositories and contributions.",
+      "image": "/angular_portfolio.png",
+      "link": "https://github.com/BraianS/angular-portfolio"
+    },
+    {
+      "name": "Ang RSS Reader",
+      "description": "An RSS reader app built with Angular and Feedbox to aggregate tech feeds in a simple interface.",
+      "image": "/ang_rss_reader.png",
+      "link": "https://github.com/BraianS/ang-rss-reader"
+    }
+  ],
+  "contact": {
+    "email": "braiannogueiradasilva@gmail.com",
+    "github": "https://github.com/BraianS/",
+    "linkedin": "https://www.linkedin.com/in/braiansilva",
+    "location": "Sorocaba, Brazil"
+  }
+}
