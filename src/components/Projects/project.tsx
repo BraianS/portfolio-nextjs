@@ -4,6 +4,7 @@ import projects from "../../data/data.json"
 import Image from "next/image";
 import Link from "next/link";
 import { Title } from "../Title";
+import { div } from "framer-motion/client";
 
 export default function Project() {
 
@@ -11,43 +12,35 @@ export default function Project() {
 
     return (
         <section id="projects" className="h-screen flex flex-col items-center  justify-center ">
-            
-            <Title title="Project"/>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {portfolioData.projects.map((project: Projects) => (
-                    <div
-                        key={project.name}
-                        className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                    >
-                        <div className="relative h-48 w-full">
-                            <Image
-                                src={project.image}
-                                alt={project.name}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            />
+            <Title title="Project" />
+
+            {projects.projects.map((project: Projects, index: number) => (
+                <div key={index} className="mb-10">
+                    <div className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+                        <div className="flex-1 text-center md:text-left">
+                            <h2 className="text-4xl font-bold mb-2">{project.name}</h2>
+                            <p className="text-lg text-gray-400 mb">{project.description}</p>
+                            <div className="flex justify-center md:justify-start space-x-4">
+                                <Link href={project.link} target="_blank" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+                                    GitHub
+                                </Link>
+                            </div>
                         </div>
-                        <div className="p-6">
-                            <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-                                {project.name}
-                            </h2>
-                            <p className="text-gray-600 dark:text-gray-300 mb-4">
-                                {project.description}
-                            </p>
-                            <Link
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-                            >
-                                View Project
-                            </Link>
+
+                        <div className="flex-1 w-full max-w-lg">
+                            <Image 
+                            src={project.image} 
+                            alt={project.name}
+                            width={600}
+                            height={400}
+                            className="rounded-lg shadow-xl"/>
                         </div>
                     </div>
-                ))}
-            </div>
+                </div>
+
+            ))}
+
         </section>
     )
 }
