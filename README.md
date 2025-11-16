@@ -28,7 +28,8 @@ A modern portfolio website built with Next.js, featuring responsive design, smoo
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/BraianS/portfolio-nextjs.git
+npm i && npm run dev
 ```
 
 ## License
