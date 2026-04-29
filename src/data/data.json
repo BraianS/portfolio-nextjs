@@ -10,9 +10,9 @@
   },
   "about": {
     "location": "Sorocaba, SP",
-    "birthDate": "1997-03-14",
+    "birthDate": "1993-03-14",
     "title": "About Me",
-    "description": "I'm a frontend developer with experience in Angular, React, and JavaScript. I thrive on collaboration, continuous learning, and delivering quality work. I love contributing to the tech community through GitHub and exploring innovative solutions with teams."
+    "description": "I'm a frontend developer focused on building modern, responsive, and user-friendly web applications. I have hands-on experience with Angular, React, and JavaScript, and I enjoy collaborating with teams to deliver clean, high-quality solutions. I'm always learning, sharing through GitHub, and finding new ways to create meaningful digital experiences."
   },
   "skills": {
     "frontend": ["AngularJS", "ReactJS", "JavaScript", "HTML", "CSS"],
