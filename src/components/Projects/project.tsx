@@ -4,11 +4,8 @@ import projects from "../../data/data.json"
 import Image from "next/image";
 import Link from "next/link";
 import { Title } from "../Title";
-import { div } from "framer-motion/client";
 
 export default function Project() {
-
-    const portfolioData = projects as { projects: Projects[] };
 
     return (
         <section id="projects" className="h-screen flex flex-col items-center  justify-center ">

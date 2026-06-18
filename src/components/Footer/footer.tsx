@@ -77,13 +77,13 @@ export default function Footer() {
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white"
             variants={itemVariants}
           >
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </motion.h3>
           <motion.p 
             className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl"
             variants={itemVariants}
           >
-            I'm available for freelance projects and collaborations. Get in touch!
+            I&apos;m available for freelance projects and collaborations. Get in touch!
           </motion.p>
         </motion.div>
 
