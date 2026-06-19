@@ -6,7 +6,7 @@
     "welcome":"Welcome",
     "firstName": "Braian",
     "lastName":"Silva",
-    "image":"/hero_image.svg"
+    "image":"./hero_image.svg"
   },
   "about": {
     "location": "Sorocaba, SP",
@@ -24,13 +24,13 @@
     {
       "name": "Angular Portfolio",
       "description": "A dynamic portfolio built using Angular and GitHub API to showcase repositories and contributions.",
-      "image": "/angular_portfolio.png",
+      "image": "./angular_portfolio.png",
       "link": "https://github.com/BraianS/angular-portfolio"
     },
     {
       "name": "Ang RSS Reader",
       "description": "An RSS reader app built with Angular and Feedbox to aggregate tech feeds in a simple interface.",
-      "image": "/ang_rss_reader.png",
+      "image": "./ang_rss_reader.png",
       "link": "https://github.com/BraianS/ang-rss-reader"
     }
   ],
